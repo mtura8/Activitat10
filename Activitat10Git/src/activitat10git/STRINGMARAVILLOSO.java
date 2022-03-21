@@ -4,32 +4,44 @@
  * and open the template in the editor.
  */
 package activitat10git;
-public class STRINGMARAVILLOSO{
-    public static void main(String[] args){
+
+public class STRINGMARAVILLOSO {
+
+    public static void main(String[] args) {
+
+        System.out.println("La versió que tenim a github ha estat actualitzada i és mes actual que la que tinc en local");
+
+        parteSuperior();
+        parteInferior();
+
+    }
+
+    static void parteSuperior() {
         String M = "MARAVILLOSO";
-        
-        System.out.println("LA versió que tenim a github ha estat actualitzada i és mes actual que la que tinc en local");
- 
         //Imprime los primeros dos triangulos de izq a derecha de la primera parte (parte superios)
-        for (int i =0; i<M.length();i++){
+        for (int i = 0; i < M.length(); i++) {
             //Imprime espacios de la primera parte para el primer triangulo 
-            for (int j=0; j < i  ;++j){
+            for (int j = 0; j < i; ++j) {
                 System.out.print(" ");
             }
             //Imprime el primer triangulo de la primer parte 
-            for (int j=i; j < M.length() ;++j){
+            for (int j = i; j < M.length(); ++j) {
                 System.out.print(M.charAt(j));
             }
             //Imprime espacios entre el primero y segundo triangulo de la primera parte
-            for (int j=i; j < M.length() ;++j){
+            for (int j = i; j < M.length(); ++j) {
                 System.out.print(" ");
             }
             //Imprime el segundo triangulo de la primera parte
-            for (int j= M.length() - i - 1; j < M.length(); ++j){
+            for (int j = M.length() - i - 1; j < M.length(); ++j) {
                 System.out.print(M.charAt(j));
             }
             System.out.println();
         }
+    }
+    
+    static void parteInferior(){
+        String M = "MARAVILLOSO";
         //Imprime los segundos dos triangulos de izq a derecha de la segunda parte (parte inferior)
         for (int i =0; i<M.length();i++){
             //Imprime primer triangulo de la segunda parte
@@ -46,5 +58,5 @@ public class STRINGMARAVILLOSO{
             }
             System.out.println();
         }
-    }    
+    }
 }
