@@ -13,7 +13,8 @@ public class STRINGMARAVILLOSO {
 
         parteSuperior();
         parteInferior();
-
+        
+        System.out.println("Linia afegida 2 per simular que esta fet amb un altre pc y el remote esta +actualitzat");
     }
 
     static void parteSuperior() {
