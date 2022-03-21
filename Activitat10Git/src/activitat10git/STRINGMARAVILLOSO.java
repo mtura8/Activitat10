@@ -15,6 +15,8 @@ public class STRINGMARAVILLOSO {
         parteInferior();
         
         System.out.println("Linia afegida 2 per simular que esta fet amb un altre pc y el remote esta +actualitzat");
+        
+        System.out.println("Creem el tag amb versió 1.01");
     }
 
     static void parteSuperior() {
